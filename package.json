@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "lint-staged": "lint-staged",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.6.0",
