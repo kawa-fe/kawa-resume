@@ -1,3 +1,4 @@
+import React from "react";
 import Info from "../components/info";
 import Intern from "../components/intern";
 import Project from "../components/project";
