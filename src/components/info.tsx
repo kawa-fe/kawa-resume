@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faEnvelope, faBlog } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faWeixin } from "@fortawesome/free-brands-svg-icons";
+import React from "react";
 
 export default function Info() {
   return (
