@@ -1,0 +1,31 @@
+@import './variables.scss';
+
+.kawa-skill-tag {
+  display: inline-block;
+  border-radius: $skill-tag-border-radius;
+  padding: $skill-tag-padding;
+  font-size: $skill-tag-font-size;
+  margin-right: 8px;
+  margin-bottom: 8px;
+
+  &.kawa-skill-tag-primary {
+    background-color: $skill-tag-primary-bg;
+    color: $skill-tag-primary-text;
+  }
+
+  &.kawa-skill-tag-secondary {
+    background-color: $skill-tag-secondary-bg;
+    color: $skill-tag-secondary-text;
+  }
+
+  &.kawa-skill-tag-tertiary {
+    background-color: $skill-tag-tertiary-bg;
+    color: $skill-tag-tertiary-text;
+  }
+
+  // 支持自定义颜色
+  &.kawa-skill-tag-custom {
+    background-color: rgba(0, 0, 0, 0.06);
+    color: rgba(0, 0, 0, 0.88);
+  }
+}
