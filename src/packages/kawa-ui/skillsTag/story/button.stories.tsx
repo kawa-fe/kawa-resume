@@ -1,16 +1,27 @@
 import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
-import { SkillsTag } from '../index';
+import SkillTag  from '../skillTag';
+import { SkillTagType } from '../../../kawa-foundation/skillTag/constant';
 
-const meta: Meta<typeof SkillsTag> = {
-  title: 'Components/SkillsTag',
-  component: SkillsTag,
-  tags: ['autodocs']
+const meta: Meta<typeof SkillTag> = {
+  title: 'Components/SkillTag',
+  component: SkillTag,
+  tags: ['autodocs'],
+  argTypes: {
+    type: {
+      control: 'select',
+      options: [
+        SkillTagType.PRIMARY, 
+        SkillTagType.SECONDARY, 
+        SkillTagType.TERTIARY
+      ]
+    }
+  }
 };
 
 export default meta;
 
-type Story = StoryObj<typeof SkillsTag>;
+type Story = StoryObj<typeof SkillTag>;
 
 export const Default: Story = {
   args: {
@@ -18,15 +29,37 @@ export const Default: Story = {
   }
 };
 
-export const Combinations: Story = {
+export const Types: Story = {
   render: () => (
     <div className="flex gap-2 items-center">
-      <SkillsTag>React</SkillsTag>
-      <SkillsTag color="#3b82f6" textColor="white">TypeScript</SkillsTag>
-      <SkillsTag color="#10b981" textColor="white">Node.js</SkillsTag>
-      <SkillsTag color="#9333ea" textColor="white">Vue</SkillsTag>
-      <SkillsTag color="#f59e0b" textColor="white">Nest.js</SkillsTag>
-      <SkillsTag color="#ef4444" textColor="white">Python</SkillsTag> 
+      <SkillTag type={SkillTagType.PRIMARY}>React</SkillTag>
+      <SkillTag type={SkillTagType.SECONDARY}>Vue</SkillTag>
+      <SkillTag type={SkillTagType.TERTIARY}>Angular</SkillTag>
+    </div>
+  )
+};
+
+export const CustomColors: Story = {
+  render: () => (
+    <div className="flex gap-2 items-center">
+      <SkillTag color="#3b82f6">TypeScript</SkillTag>
+      <SkillTag color="#10b981">Node.js</SkillTag>
+      <SkillTag color="#9333ea">Vue</SkillTag>
+      <SkillTag color="#f59e0b">Nest.js</SkillTag>
+      <SkillTag color="#ef4444">Python</SkillTag>
+    </div>
+  )
+};
+
+export const MixedExample: Story = {
+  render: () => (
+    <div className="flex gap-2 items-center flex-wrap">
+      <SkillTag type={SkillTagType.PRIMARY}>React</SkillTag>
+      <SkillTag type={SkillTagType.SECONDARY}>Vue</SkillTag>
+      <SkillTag type={SkillTagType.TERTIARY}>Angular</SkillTag>
+      <SkillTag color="#3b82f6">TypeScript</SkillTag>
+      <SkillTag color="#10b981">Node.js</SkillTag>
+      <SkillTag color="#9333ea">GraphQL</SkillTag>
     </div>
   )
 };
