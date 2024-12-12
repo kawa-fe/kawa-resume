@@ -1,0 +1,24 @@
+// 标签通用样式变量
+$skill-tag-border-radius: 4px;
+$skill-tag-margin-right: 8px;
+$skill-tag-margin-bottom: 8px;
+
+.kawa-skill-tag {
+  display: inline-block;
+  border-radius: $skill-tag-border-radius;
+  margin-right: $skill-tag-margin-right;
+  margin-bottom: $skill-tag-margin-bottom;
+  border: 1px solid currentColor;
+  
+  &.kawa-skill-tag-primary {
+    // 默认大小的标签样式
+  }
+
+  &.kawa-skill-tag-mini {
+    // 小尺寸标签样式
+  }
+
+  &.kawa-skill-tag-large {
+    // 大尺寸标签样式
+  }
+}
