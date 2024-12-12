@@ -1,0 +1,10 @@
+{
+    "words": [
+        "amannn",
+        "farmfe",
+        "kawa"
+    ],
+    "ignorePaths": [
+        "pnpm-lock.yaml"
+    ]
+}
