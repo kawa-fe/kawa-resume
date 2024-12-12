@@ -3,43 +3,22 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "description": "Kawa resume for fronted developer",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview",
+    "lint": "eslint packages",
     "lint-staged": "lint-staged",
     "prepare": "husky"
   },
-  "dependencies": {
-    "@fortawesome/free-brands-svg-icons": "^6.6.0",
-    "@fortawesome/free-solid-svg-icons": "^6.6.0",
-    "@fortawesome/react-fontawesome": "^0.2.2",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "web-vitals": "^4.2.3"
-  },
   "devDependencies": {
-    "@eslint/js": "^9.11.1",
-    "@types/react": "^18.3.10",
-    "@types/react-dom": "^18.3.0",
-    "@vitejs/plugin-react": "^4.3.2",
-    "autoprefixer": "^10.4.20",
-    "eslint": "^9.11.1",
-    "eslint-plugin-react": "^7.37.0",
-    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
-    "eslint-plugin-react-refresh": "^0.4.12",
-    "globals": "^15.9.0",
-    "husky": "^9.1.6",
-    "lint-staged": "^15.2.10",
-    "postcss": "^8.4.47",
-    "tailwindcss": "^3.4.13",
-    "ts-node": "^10.9.2",
-    "vite": "^5.4.8"
+    "husky": "^9.1.7",
+    "lint-staged": "^15.2.10"
   },
   "lint-staged": {
     "*.{js,ts,vue,jsx,tsx}": [
-      "eslint --cache --fix"
+      "echo"
     ]
   }
 }
