@@ -1,11 +1,17 @@
 import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
-import TechStack from "../techStack";
+import TechStack from "../index.tsx";
 
 const meta: Meta<typeof TechStack> = {
   title: "Components/TechStack",
   component: TechStack,
   tags: ["autodocs"],
+  argTypes: {
+    techStack: {
+      description: "An array of technology stack items to display",
+      control: { type: 'object' }
+    }
+  }
 };
 
 export default meta;
@@ -14,13 +20,13 @@ type Story = StoryObj<typeof TechStack>;
 
 export const Default: Story = {
   args: {
-    stacks: ["React", "TypeScript", "Node.js"],
+    techStack: ["React", "TypeScript", "Node.js"],
   },
 };
 
 export const ManyStacks: Story = {
   args: {
-    stacks: [
+    techStack: [
       "React", 
       "TypeScript", 
       "Node.js", 
@@ -43,13 +49,7 @@ export const ManyStacks: Story = {
       "MySQL",
       "Redis",
       "RabbitMQ",
-      "Elasticsearch",
-      "MongoDB",
-      "Redis",
-      "RabbitMQ",
-      "Elasticsearch",
+      "Elasticsearch"
     ],
   },
 };
-
- 

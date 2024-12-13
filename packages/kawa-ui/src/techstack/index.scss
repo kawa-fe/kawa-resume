@@ -1,0 +1,18 @@
+.kawa-techStack {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    flex-wrap: wrap;
+    padding: 5px 0;
+    gap: 7.5px; /* 5px * 1.5 */
+  
+    .kawa-tech-item {
+      font-size: 16px; /* 11px * 1.5 */
+      font-weight: 300;
+      background-color: #e3edff;
+      color: #2e86de;
+      font-weight: 600; /* 保持不变 */
+      border-radius: 5px;
+      padding: 3px 7.5px; /* 2px * 1.5 和 5px * 1.5 */
+    }
+  }
