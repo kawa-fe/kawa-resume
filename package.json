@@ -50,16 +50,10 @@
     "vite": "^5.4.8",
     "husky": "^9.1.7",
     "lint-staged": "^15.2.10"
-
   },
   "lint-staged": {
     "*.{js,ts,vue,jsx,tsx}": [
       "echo"
-    ]
-  },
-  "eslintConfig": {
-    "extends": [
-      "plugin:storybook/recommended"
     ]
   },
   "eslintConfig": {
