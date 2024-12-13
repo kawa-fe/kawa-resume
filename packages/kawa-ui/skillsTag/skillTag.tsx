@@ -1,5 +1,5 @@
 import React from "react";
-import "../skillsTag/skillTags.scss";
+import "./skillTags.scss";
 
 export enum SkillTagType {
   PRIMARY = "primary", //正常
