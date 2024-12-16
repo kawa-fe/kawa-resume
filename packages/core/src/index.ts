@@ -1,5 +1,2 @@
-export interface KawaConfig {}
-
-export function defineConfig(config: KawaConfig): KawaConfig {
-  return config;
-}
+export * from "./config";
+export * from "./types";
