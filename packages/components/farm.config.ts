@@ -1,17 +1,17 @@
 import { defineConfig } from "@farmfe/core";
-import dts from "@farmfe/js-plugin-dts";
+import farmDtsPlugin from "@farmfe/js-plugin-dts";
 
 export default defineConfig({
-  plugins: [dts()],
+  plugins: ["@farmfe/plugin-react", farmDtsPlugin()],
   compilation: {
     input: {
-      index: "src/index.ts",
+      index: "index.ts",
     },
     output: {
-      entryFilename: "index.cjs",
-      path: "dist",
-      format: "cjs",
+      entryFilename: "index.js",
       targetEnv: "node",
+      format: "esm",
+      path: "dist",
     },
     sourcemap: false,
     presetEnv: false,
