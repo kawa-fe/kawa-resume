@@ -3,7 +3,10 @@
         "amannn",
         "farmfe",
         "kawa",
-        "kawafe"
+        "kawafe",
+        "kuaiShou",
+        "bilibili",
+
     ],
     "ignorePaths": [
         "pnpm-lock.yaml"
