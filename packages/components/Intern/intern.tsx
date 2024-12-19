@@ -1,5 +1,12 @@
 import React, { forwardRef, memo } from "react";
 import { InternType } from "./intern.types";
+import {
+  companyLogoStyle,
+  CompanyNameStyle,
+  InternStyle,
+  JobStyle,
+  PeriodStyle,
+} from "./index.style";
 
 const Intern = memo(
   forwardRef(
@@ -8,21 +15,17 @@ const Intern = memo(
       ref: React.ForwardedRef<HTMLDivElement>
     ) => {
       return (
-        <div ref={ref}>
-          <div>
-            <div>
-              <h3>{job}</h3>
-              <p>
-                {company} - {group}
-              </p>
-              <p>{period}</p>
-            </div>
-            <div>
-              {companyLogoUrl && (
-                <img src={companyLogoUrl} alt={`${company} logo`} />
-              )}
-            </div>
-          </div>
+        <div style={InternStyle} ref={ref}>
+          <span style={PeriodStyle}>{period}</span>
+          <span style={CompanyNameStyle}>
+            {group ? `${company} | ${group}` : company}
+          </span>
+          <span style={JobStyle}>{job}</span>
+          <img
+            src={companyLogoUrl}
+            alt={`${company} logo`}
+            style={companyLogoStyle}
+          />
         </div>
       );
     }

@@ -1,10 +1,13 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Intern } from '../Intern';
+import Intern from '../Intern/Intern';
+import byteDanceLogo from '../../public/logo/byteDance.png';
+import bilibiliLogo from '../../public/logo/bilibili.png';
+import kuaiShouLogo from '../../public/logo/kuaiShou.png';
+import tencentLogo from '../../public/logo/tencent.png';
 
 const meta: Meta<typeof Intern> = {
   title: 'Components/Intern',
   component: Intern,
-  tags: ['autoDocs'],
   argTypes: {
     period: { 
       control: 'text',
@@ -30,34 +33,44 @@ const meta: Meta<typeof Intern> = {
 };
 
 export default meta;
-
 type Story = StoryObj<typeof Intern>;
 
-export const Default: Story = {
+export const ByteDanceInternship: Story = {
   args: {
     period: '2023.07 - 2023.09',
-    company: 'Google',
-    group: 'Cloud Infrastructure',
-    job: 'Software Engineering Intern',
-    companyLogoUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png'
+    company: '字节跳动',
+    group: '飞书',
+    job: '前端实习生',
+    companyLogoUrl: byteDanceLogo
   }
 };
 
-export const WithoutLogo: Story = {
+export const BilibiliInternship: Story = {
   args: {
     period: '2022.06 - 2022.08',
-    company: 'Microsoft',
-    group: 'Azure DevOps',
-    job: 'Backend Development Intern'
+    company: 'Bilibili',
+    group: '视频技术部',
+    job: '后端实习生',
+    companyLogoUrl: bilibiliLogo
   }
 };
 
-export const StartupInternship: Story = {
+export const KuaiShouInternship: Story = {
   args: {
     period: '2024.01 - 2024.03',
-    company: 'TechStartup Inc.',
-    group: 'Product Development',
-    job: 'Full-Stack Intern',
-    companyLogoUrl: 'https://example.com/startup-logo.png'
+    company: '快手',
+    // group: 'Video Technology',
+    job: '门卫保安实习生',
+    companyLogoUrl: kuaiShouLogo
+  }
+};
+
+export const TencentInternship: Story = {
+  args: {
+    period: '2022.09 - 2022.12',
+    company: '腾讯',
+    group: '微信事业部',
+    job: '前端高级工程师',
+    companyLogoUrl: tencentLogo
   }
 };

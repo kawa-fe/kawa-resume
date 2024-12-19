@@ -1,4 +1,3 @@
-import React from "react";
 import List from "../list/list";
 import type { Meta, StoryFn } from "@storybook/react";
 
