@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "typeRoots": ["./node_modules/@types", "./packages/public/logo"],
+    "jsx": "react-jsx"
+  },
+  "include": ["packages/**/*.ts", "packages/**/*.tsx"]
+}
