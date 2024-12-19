@@ -2,7 +2,7 @@ import React from "react";
 import List from "../list/list";
 import type { Meta, StoryFn } from "@storybook/react";
 
-import { ListItemWithPoint, ListItemWithNumber } from "../list/ListRenderitem";
+import { ListItemWithPoint, ListItemWithNumber } from "../list/ListRenderItem";
 
 export default {
   title: "Components/List",
@@ -13,7 +13,7 @@ export default {
  * 
  * @returns
  * List组件可以用于简历中的项目经历、技能清单、工作经历列表式数据的渲染
- * 可以在/packages/components/list/listrenderitem中继续开发不同渲染形式的ListRenderItem
+ * 可以在/packages/components/list/listRenderItem中继续开发不同渲染形式的ListRenderItem
  */
 export const NumberedList: StoryFn = () => (
   <>
