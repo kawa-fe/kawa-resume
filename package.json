@@ -10,7 +10,8 @@
   "scripts": {
     "lint": "eslint packages",
     "lint-staged": "lint-staged",
-    "prepare": "husky"
+    "prepare": "husky",
+    "storybook": "cd packages/components && pnpm storybook"
   },
   "devDependencies": {
     "husky": "^9.1.7",
