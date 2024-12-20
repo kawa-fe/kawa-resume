@@ -1,5 +1,5 @@
 import type { UserData } from "@kawafe/core";
-import React from "react";
+import type React from "react";
 
 export interface ImageProps {
   src?: string;

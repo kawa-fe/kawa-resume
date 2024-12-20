@@ -11,7 +11,7 @@
     "lint": "eslint packages",
     "lint-staged": "lint-staged",
     "prepare": "husky",
-    "storybook": "cd packages/components && pnpm storybook"
+    "storybook": "pnpm --filter @kawafe/components storybook"
   },
   "devDependencies": {
     "husky": "^9.1.7",
