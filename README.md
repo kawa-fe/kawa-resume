@@ -16,7 +16,8 @@
 - ci
 - chore
 - revert
--release
+- release
+> ###### 提交规范参照：https://www.conventionalcommits.org/zh-hans/v1.0.0/
 > ##### 有问题欢迎提issue，一起交流学习，希望对你有所帮助
 > ##### 希望大家多多star，多多支持
 > ##### 参与贡献直接提pr或者直接在issue下面认领我会assign给你
