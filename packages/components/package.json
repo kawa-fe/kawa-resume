@@ -16,10 +16,7 @@
   "scripts": {
     "build": "farm build",
     "clean": "farm clean",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
-    "build:css": "tailwindcss -i ./index.css -o ./dist/tailwind.css",
-    "watch:css": "tailwindcss -i ./index.css -o ./dist/tailwind.css --watch"
+    "storybook": "storybook dev -p 6006"
   },
   "dependencies": {
     "@farmfe/js-plugin-dts": "^0.6.4",
