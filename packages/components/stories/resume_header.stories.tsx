@@ -1,6 +1,5 @@
 import type { Meta, StoryFn } from "@storybook/react";
 import ResumeHeader from "../resume_header/resume_header";
-import "../resume_header/resume_header.style.ts";
 import React from "react";
 
 export default {
