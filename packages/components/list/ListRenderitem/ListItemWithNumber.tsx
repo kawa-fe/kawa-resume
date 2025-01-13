@@ -1,5 +1,4 @@
 import React from "react";
-import { ListItemStyle } from "./index.style";
 
 interface ListItemWithNumberProps<T> {
   item: T;
@@ -10,23 +9,11 @@ export function ListItemWithNumber<T>({
   item,
   index,
 }: ListItemWithNumberProps<T>) {
-
-  const listItemNumberStyle: React.CSSProperties = {
-    color: "#ffffff",
-    backgroundColor: "#3498db",
-    borderRadius: "50%",
-    aspectRatio: "1 / 1",
-    width: "24px",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    fontWeight: "bold",
-    marginRight: "5px",
-  };
-
   return (
-    <div style={ListItemStyle}>
-      <span style={listItemNumberStyle}>{index + 1}</span>
+    <div className="flex items-center py-[2.5px]">
+      <span className="text-white bg-[#3498db] rounded-full aspect-square w-[24px] flex justify-center items-center font-bold mr-[5px]">
+        {index + 1}
+      </span>
       <span>{String(item)}</span>
     </div>
   );

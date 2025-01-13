@@ -1,23 +1,13 @@
-import React from 'react';
-import { ListItemStyle } from './index.style';
+import React from "react";
 
 interface ListItemWithPointProps<T> {
   item: T;
 }
 
-const ListItemPointStyle: React.CSSProperties = {
-  width: '10px',
-  height: '10px',
-  borderRadius: '50%',
-  backgroundColor: '#2d3436',
-  marginRight: '10px',
-  display: 'flex',
-};
-
 export function ListItemWithPoint<T>({ item }: ListItemWithPointProps<T>) {
   return (
-    <div style={ListItemStyle}>
-      <span style={ListItemPointStyle}></span>
+    <div className="flex items-center py-[2.5px]">
+      <span className="w-[10px] h-[10px] rounded-full bg-[#2d3436] mr-[10px] flex"></span>
       <span>{String(item)}</span>
     </div>
   );
