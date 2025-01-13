@@ -1,5 +1,5 @@
 import type { Meta, StoryFn } from "@storybook/react";
-import ResumeHeader from "../resume_header/resume_header";
+import ResumeHeader from "../kawa-Material/resume_header/resume_header";
 import React from "react";
 
 export default {
