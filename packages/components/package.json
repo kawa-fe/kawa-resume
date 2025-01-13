@@ -19,8 +19,7 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "build:css": "tailwindcss -i ./index.css -o ./dist/tailwind.css",
-    "watch:css": "tailwindcss -i ./index.css -o ./dist/tailwind.css --watch",
-     "dev:test": "vite test --open"
+    "watch:css": "tailwindcss -i ./index.css -o ./dist/tailwind.css --watch"
   },
   "dependencies": {
     "@farmfe/js-plugin-dts": "^0.6.4",
@@ -44,6 +43,7 @@
     "@types/react": "^18.3.18",
     "@types/react-dom": "^18.3.5",
     "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
     "core-js": "^3.39.0",
     "prop-types": "15.8.1",
     "react-refresh": "^0.14.2",
