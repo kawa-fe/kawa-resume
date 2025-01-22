@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "../kawa-Material/image/Image";
+import Image from "../image/Image";
 import type { Meta, StoryFn } from "@storybook/react";
 
 export default {

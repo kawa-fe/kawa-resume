@@ -1,8 +1,8 @@
 import React from "react";
-import List from "../kawa-Material/list/list";
+import List from "../list/list";
 import type { Meta, StoryFn } from "@storybook/react";
 
-import { ListItemWithPoint, ListItemWithNumber } from "../kawa-Material/list/ListRenderItem";
+import { ListItemWithPoint, ListItemWithNumber } from "../list/ListRenderItem";
 
 export default {
   title: "Components/List",

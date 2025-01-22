@@ -1,8 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    './kawa-Material/**/*.{js,jsx,ts,tsx}',
-    './stories/**/*.{js,jsx,ts,tsx}'
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "./stories/**/*.{js,ts,jsx,tsx}",
+    "./**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
     extend: {},
