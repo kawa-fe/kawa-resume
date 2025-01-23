@@ -2,7 +2,7 @@ import React from "react";
 import List from "../list/list";
 import type { Meta, StoryFn } from "@storybook/react";
 
-import { ListItemWithPoint, ListItemWithNumber } from "../list/ListRenderItem";
+import { ListItem  } from "../list/ListRenderItem/ListItem";
 
 export default {
   title: "Components/List",
@@ -25,7 +25,7 @@ export const NumberedList: StoryFn = () => (
         "具备性能优化经验，熟悉React Profiler、React.memo、useMemo等性能优化技术；",
       ]}
       renderItem={(item, index) => (
-        <ListItemWithNumber item={item} index={index || 0} />
+        <ListItem item={item} index={index || 0} type="number" />
       )}
     />
   </>
@@ -40,7 +40,7 @@ export const PointedList: StoryFn = () => (
         "熟练使用TypeORM/Prisma进行数据库ORM操作，能设计复杂的数据库查询和性能优化方案；",
         "具备分布式系统设计经验，熟悉Redis缓存策略、消息队列(RabbitMQ/Kafka)等中间件技术；",
       ]}
-      renderItem={(item) => <ListItemWithPoint item={item} />}
+      renderItem={(item) => <ListItem item={item} type="point"/>}
     />
   </>
 );
