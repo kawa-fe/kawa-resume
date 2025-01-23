@@ -1,2 +1,1 @@
-export { ListItemWithNumber } from './ListItemWithNumber';
-export { ListItemWithPoint } from './ListItemWithPoint';
+export { ListItem } from './ListItem';
