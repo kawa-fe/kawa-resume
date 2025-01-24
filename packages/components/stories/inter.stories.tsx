@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { Intern } from "../Intern";
-import byteDanceLogo from "../../public/logo/byteDance.png";
-import bilibiliLogo from "../../public/logo/bilibili.png";
-import kuaiShouLogo from "../../public/logo/kuaiShou.png";
-import tencentLogo from "../../public/logo/tencent.png";
+// import byteDanceLogo from "../../public/logo/byteDance.png";
+// import bilibiliLogo from "../../public/logo/bilibili.png";
+// import kuaiShouLogo from "../../public/logo/kuaiShou.png";
+// import tencentLogo from "../../public/logo/tencent.png";
 
 const meta: Meta<typeof Intern> = {
   title: "Components/Intern",
@@ -41,7 +41,7 @@ export const ByteDanceInternship: Story = {
     company: "字节跳动",
     group: "飞书",
     job: "前端实习生",
-    companyLogoUrl: byteDanceLogo,
+    // companyLogoUrl: byteDanceLogo,
   },
 };
 
@@ -51,7 +51,7 @@ export const BilibiliInternship: Story = {
     company: "Bilibili",
     group: "视频技术部",
     job: "后端实习生",
-    companyLogoUrl: bilibiliLogo,
+    // companyLogoUrl: bilibiliLogo,
   },
 };
 
@@ -61,7 +61,7 @@ export const KuaiShouInternship: Story = {
     company: "快手",
     // group: 'Video Technology',
     job: "门卫保安实习生",
-    companyLogoUrl: kuaiShouLogo,
+    // companyLogoUrl: kuaiShouLogo,
   },
 };
 
@@ -71,6 +71,6 @@ export const TencentInternship: Story = {
     company: "腾讯",
     group: "微信事业部",
     job: "前端高级工程师",
-    companyLogoUrl: tencentLogo,
+    // companyLogoUrl: tencentLogo,
   },
 };
