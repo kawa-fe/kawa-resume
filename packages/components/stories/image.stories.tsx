@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "../image/Image";
+import { Image } from "../image";
 import type { Meta, StoryFn } from "@storybook/react";
 
 export default {
