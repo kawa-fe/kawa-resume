@@ -1,8 +1,8 @@
 import React from "react";
-import List from "../list/list";
+import { List } from "../list";
 import type { Meta, StoryFn } from "@storybook/react";
 
-import { ListItem  } from "../list/ListRenderItem/ListItem";
+import { ListItem } from "../list/ListRenderItem/ListItem";
 
 export default {
   title: "Components/List",
@@ -10,7 +10,7 @@ export default {
 } as Meta;
 
 /**
- * 
+ *
  * @returns
  * List组件可以用于简历中的项目经历、技能清单、工作经历列表式数据的渲染
  * 可以在/packages/components/list/listRenderItem中继续开发不同渲染形式的ListRenderItem
@@ -40,7 +40,7 @@ export const PointedList: StoryFn = () => (
         "熟练使用TypeORM/Prisma进行数据库ORM操作，能设计复杂的数据库查询和性能优化方案；",
         "具备分布式系统设计经验，熟悉Redis缓存策略、消息队列(RabbitMQ/Kafka)等中间件技术；",
       ]}
-      renderItem={(item) => <ListItem item={item} type="point"/>}
+      renderItem={(item) => <ListItem item={item} type="point" />}
     />
   </>
 );

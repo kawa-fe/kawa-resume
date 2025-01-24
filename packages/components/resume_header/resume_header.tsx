@@ -15,7 +15,7 @@ interface ResumeHeaderProps {
   type?: keyof typeof enumMap;
 }
 
-const ResumeHeader = React.memo(
+export const ResumeHeader = React.memo(
   forwardRef<HTMLDivElement, ResumeHeaderProps>(
     ({ type = "基本信息" }, ref) => {
       return (
@@ -34,5 +34,3 @@ const ResumeHeader = React.memo(
 );
 
 ResumeHeader.displayName = "ResumeHeader";
-
-export default ResumeHeader;
