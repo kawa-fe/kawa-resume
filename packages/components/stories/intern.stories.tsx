@@ -54,23 +54,3 @@ export const BilibiliInternship: Story = {
     // companyLogoUrl: bilibiliLogo,
   },
 };
-
-export const KuaiShouInternship: Story = {
-  args: {
-    period: "2024.01 - 2024.03",
-    company: "快手",
-    // group: 'Video Technology',
-    job: "门卫保安实习生",
-    // companyLogoUrl: kuaiShouLogo,
-  },
-};
-
-export const TencentInternship: Story = {
-  args: {
-    period: "2022.09 - 2022.12",
-    company: "腾讯",
-    group: "微信事业部",
-    job: "前端高级工程师",
-    // companyLogoUrl: tencentLogo,
-  },
-};
