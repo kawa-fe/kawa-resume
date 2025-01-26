@@ -6,11 +6,12 @@
   "workspaces": [
     "packages/*"
   ],
-  "description": "Kawa resume for fronted developer",
+  "description": "Kawa resume for frontend developer",
   "scripts": {
     "lint": "eslint packages",
     "lint-staged": "lint-staged",
-    "prepare": "husky"
+    "prepare": "husky",
+    "storybook": "pnpm --filter @kawafe/components storybook"
   },
   "devDependencies": {
     "husky": "^9.1.7",

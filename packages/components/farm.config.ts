@@ -1,8 +1,9 @@
 import { defineConfig } from "@farmfe/core";
-import farmDtsPlugin from "@farmfe/js-plugin-dts";
+import dts from "@farmfe/js-plugin-dts";
+import tailwindcss from "@farmfe/js-plugin-tailwindcss";
 
 export default defineConfig({
-  plugins: ["@farmfe/plugin-react", farmDtsPlugin()],
+  plugins: ["@farmfe/plugin-react", dts(), tailwindcss()],
   compilation: {
     input: {
       index: "index.ts",
