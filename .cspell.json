@@ -3,7 +3,8 @@
         "amannn",
         "farmfe",
         "kawa",
-        "kawafe"
+        "kawafe",
+        "rspress"
     ],
     "ignorePaths": [
         "pnpm-lock.yaml"

@@ -1,27 +1,17 @@
-> # Kawa Resume
-> 卡哇简历--开源程序员简历模板库（孵化中）
-使用物料库和渲染引擎
+# Kawa Resume
 
-目前正在深度开发（？）后面cli写完的话可以直接pnpm kawa component create这样新建组件
+Kawa Resume 基于`主题预设->组件库物料->布局预设->用户数据`的设计思路，提供了一套开箱即用的简历模板库。
 
-> ### Pr标题规范 Available types:
-- fix
-- feat
-- docs
-- style
-- refactor
-- perf
-- test
-- build
-- ci
-- chore
-- revert
-- release
-> ###### 提交规范参照：https://www.conventionalcommits.org/zh-hans/v1.0.0/
-> ##### 有问题欢迎提issue，一起交流学习，希望对你有所帮助
-> ##### 希望大家多多star，多多支持
-> ##### 参与贡献直接提pr或者直接在issue下面认领我会assign给你
+## 快速开始
 
-##### 学习交流群
+当前 Kawa Resume 尚处于深度开发阶段，欢迎参与贡献。
 
+## 贡献
+
+在参与贡献之前，请参阅我们的[贡献指南](./CONTRIBUTING.md)。
+
+## 学习交流群
+
+<!-- markdownlint-disable MD033 -->
 <img src="./public/qun.jpg" alt="kawa" style="width: 200px;"/>
+<!-- markdownlint-enable MD033 -->

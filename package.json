@@ -3,23 +3,27 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "workspaces": [
-    "packages/*"
-  ],
   "description": "Kawa resume for frontend developer",
   "scripts": {
     "lint": "eslint packages",
     "lint-staged": "lint-staged",
     "prepare": "husky",
-    "storybook": "pnpm --filter @kawafe/components storybook"
+    "docs:dev": "rspress dev",
+    "docs:build": "rspress build"
   },
   "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@rspress/plugin-preview": "^1.40.2",
     "husky": "^9.1.7",
-    "lint-staged": "^15.2.10"
+    "lint-staged": "^15.2.10",
+    "rspress": "^1.40.2"
   },
   "lint-staged": {
     "*.{js,ts,vue,jsx,tsx}": [
-      "echo"
+      "biome check --write"
     ]
+  },
+  "dependencies": {
+    "@kawafe/components": "link:packages/components"
   }
 }
