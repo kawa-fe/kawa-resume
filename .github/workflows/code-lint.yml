@@ -1,6 +1,9 @@
 name: Code Lint
 
-on: [pull_request]
+on:
+  push:
+    branches: [main]
+  pull_request:
 
 jobs:
   lint-code-spell:
