@@ -1,0 +1,28 @@
+name: Build and Test
+
+on: [pull_request]
+
+jobs:
+  lint-code-spell:
+    name: Code Spell Check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        name: Install pnpm
+        with:
+          version: 9
+          run_install: false
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "pnpm"
+      - name: Install dependencies
+        run: pnpm install
+      - name: Build Components
+        run: pnpm lib:build
+      - name: Build Core
+        run: pnpm core:build
+      - name: Build Docs
+        run: pnpm docs:build

@@ -1,4 +1,4 @@
-name: Lint Pr Title
+name: Code Spell Check
 
 on: [pull_request]
 
@@ -27,3 +27,5 @@ jobs:
           config: .cspell.json
           strict: true
           verbose: true
+      - name: Biome Check
+        run: pnpm lint

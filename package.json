@@ -6,7 +6,6 @@
   "description": "Kawa resume for frontend developer",
   "scripts": {
     "lint": "biome check",
-    "lint-staged": "lint-staged",
     "docs:dev": "rspress dev",
     "docs:build": "rspress build",
     "lib:build": "pnpm --filter @kawafe/components build",
