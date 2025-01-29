@@ -3,8 +3,7 @@ name: Build and Test
 on: [pull_request]
 
 jobs:
-  lint-code-spell:
-    name: Code Spell Check
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
