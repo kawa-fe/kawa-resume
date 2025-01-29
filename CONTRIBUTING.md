@@ -40,3 +40,30 @@ pnpm lib:build
 ```bash
 pnpm core:build
 ```
+
+## 代码检查和代码格式化
+
+我们使用`biomejs`进行代码检查和代码格式化，可以使用以下命令启动代码检查：
+
+```bash
+pnpm lint
+```
+
+### PR 标题规范
+
+我们采用约定式提交来规范我们的 PR 标题，参考[约定式提交](https://www.conventionalcommits.org/zh-hans/v1.0.0/)。
+
+我们允许的 PR 类型如下：
+
+- fix
+- feat
+- docs
+- style
+- refactor
+- perf
+- test
+- build
+- ci
+- chore
+- revert
+- release
