@@ -1,18 +1,18 @@
-import { defineConfig } from "@farmfe/core";
-import dts from "@farmfe/js-plugin-dts";
-import tailwindcss from "@farmfe/js-plugin-tailwindcss";
+import { defineConfig } from '@farmfe/core';
+import dts from '@farmfe/js-plugin-dts';
+import tailwindcss from '@farmfe/js-plugin-tailwindcss';
 
 export default defineConfig({
-  plugins: ["@farmfe/plugin-react", dts(), tailwindcss()],
+  plugins: ['@farmfe/plugin-react', dts(), tailwindcss()],
   compilation: {
     input: {
-      index: "index.ts",
+      index: 'index.ts',
     },
     output: {
-      entryFilename: "index.js",
-      targetEnv: "node",
-      format: "esm",
-      path: "dist",
+      entryFilename: 'index.js',
+      targetEnv: 'library-browser',
+      format: 'esm',
+      path: 'dist',
     },
     sourcemap: false,
     presetEnv: false,
@@ -22,8 +22,8 @@ export default defineConfig({
     partialBundling: {
       enforceResources: [
         {
-          name: "index",
-          test: [".+"],
+          name: 'index',
+          test: ['.+'],
         },
       ],
     },
