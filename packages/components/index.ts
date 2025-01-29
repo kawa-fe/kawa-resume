@@ -1,4 +1,4 @@
-export * from "./image";
+export * from './image';
 
 // // @ts-expect-error Farm now has support for glob types
 // const globComponents = import.meta.glob("./*/index.ts", { eager: true });

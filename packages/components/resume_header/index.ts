@@ -1,1 +1,1 @@
-export {  ResumeHeader } from './resume_header';
+export { ResumeHeader } from './resume_header';

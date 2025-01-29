@@ -1,5 +1,5 @@
-import React, { forwardRef } from "react";
-import type { ImageProps } from "./Image.types";
+import React, { forwardRef } from 'react';
+import type { ImageProps } from './Image.types';
 
 const Image = React.memo(
   forwardRef<HTMLImageElement, ImageProps>((props: ImageProps, ref) => {
@@ -18,7 +18,7 @@ const Image = React.memo(
         className={className}
       />
     );
-  })
+  }),
 );
 
 export default Image;

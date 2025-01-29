@@ -7,13 +7,9 @@
   "scripts": {
     "build": "farm build"
   },
-  "keywords": [
-    "resume"
-  ],
+  "keywords": ["resume"],
   "license": "MIT",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "devDependencies": {
     "@farmfe/cli": "^1.0.4",
     "@farmfe/core": "^1.5.0",

@@ -5,11 +5,13 @@
   "type": "module",
   "description": "Kawa resume for frontend developer",
   "scripts": {
-    "lint": "eslint packages",
+    "lint": "biome check",
     "lint-staged": "lint-staged",
-    "prepare": "husky",
     "docs:dev": "rspress dev",
-    "docs:build": "rspress build"
+    "docs:build": "rspress build",
+    "lib:build": "pnpm --filter @kawafe/components build",
+    "core:build": "pnpm --filter @kawafe/core build",
+    "prepare": "husky"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
@@ -19,9 +21,7 @@
     "rspress": "^1.40.2"
   },
   "lint-staged": {
-    "*.{js,ts,vue,jsx,tsx}": [
-      "biome check --write"
-    ]
+    "*.{js,ts,vue,jsx,tsx}": ["biome check --write"]
   },
   "dependencies": {
     "@kawafe/components": "link:packages/components"

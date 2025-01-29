@@ -1,12 +1,4 @@
 {
-    "words": [
-        "amannn",
-        "farmfe",
-        "kawa",
-        "kawafe",
-        "rspress"
-    ],
-    "ignorePaths": [
-        "pnpm-lock.yaml"
-    ]
+  "words": ["amannn", "farmfe", "kawa", "kawafe", "rspress"],
+  "ignorePaths": ["pnpm-lock.yaml"]
 }

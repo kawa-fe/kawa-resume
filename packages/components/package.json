@@ -8,11 +8,7 @@
     "type": "git",
     "url": "git+https://github.com/kawa-fe/kawa-resume.git"
   },
-  "keywords": [
-    "kawa",
-    "resume",
-    "components"
-  ],
+  "keywords": ["kawa", "resume", "components"],
   "scripts": {
     "build": "farm build",
     "clean": "farm clean",

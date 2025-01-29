@@ -1,17 +1,17 @@
-import { defineConfig } from "@farmfe/core";
-import dts from "@farmfe/js-plugin-dts";
+import { defineConfig } from '@farmfe/core';
+import dts from '@farmfe/js-plugin-dts';
 
 export default defineConfig({
   plugins: [dts()],
   compilation: {
     input: {
-      index: "src/index.ts",
+      index: 'src/index.ts',
     },
     output: {
-      entryFilename: "index.cjs",
-      path: "dist",
-      format: "cjs",
-      targetEnv: "node",
+      entryFilename: 'index.cjs',
+      path: 'dist',
+      format: 'cjs',
+      targetEnv: 'node',
     },
     sourcemap: false,
     presetEnv: false,
@@ -21,8 +21,8 @@ export default defineConfig({
     partialBundling: {
       enforceResources: [
         {
-          name: "index",
-          test: [".+"],
+          name: 'index',
+          test: ['.+'],
         },
       ],
     },

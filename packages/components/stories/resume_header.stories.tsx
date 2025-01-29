@@ -1,22 +1,22 @@
-import type { Meta, StoryFn } from "@storybook/react";
-import { ResumeHeader } from "../resume_header";
-import React from "react";
+import type { Meta, StoryFn } from '@storybook/react';
+import React from 'react';
+import { ResumeHeader } from '../resume_header';
 
 export default {
-  title: "Components/ResumeHeader",
+  title: 'Components/ResumeHeader',
   component: ResumeHeader,
   argTypes: {
     type: {
-      control: "select",
+      control: 'select',
       options: [
-        "基本信息",
-        "工作经历",
-        "项目经历",
-        "实习经历",
-        "开源项目",
-        "技能清单",
-        "兴趣爱好",
-        "自我评价",
+        '基本信息',
+        '工作经历',
+        '项目经历',
+        '实习经历',
+        '开源项目',
+        '技能清单',
+        '兴趣爱好',
+        '自我评价',
       ],
     },
   },
