@@ -1,10 +1,12 @@
-name: Lint Pr Title
+name: Build and Test
 
-on: [pull_request]
+on:
+  push:
+    branches: [main]
+  pull_request:
 
 jobs:
-  lint-code-spell:
-    name: Code Spell Check
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -20,10 +22,9 @@ jobs:
           cache: "pnpm"
       - name: Install dependencies
         run: pnpm install
-      - name: Code Spell Check
-        uses: streetsidesoftware/cspell-action@v6
-        with:
-          files: "**"
-          config: .cspell.json
-          strict: true
-          verbose: true
+      - name: Build Components
+        run: pnpm lib:build
+      - name: Build Core
+        run: pnpm core:build
+      - name: Build Docs
+        run: pnpm docs:build

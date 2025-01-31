@@ -1,0 +1,33 @@
+name: Code Lint
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  lint-code-spell:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        name: Install pnpm
+        with:
+          version: 9
+          run_install: false
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "pnpm"
+      - name: Install dependencies
+        run: pnpm install
+      - name: Code Spell Check
+        uses: streetsidesoftware/cspell-action@v6
+        with:
+          files: "**"
+          config: .cspell.json
+          strict: true
+          verbose: true
+      - name: Code Lint
+        run: pnpm lint
