@@ -26,3 +26,4 @@ dist-ssr
 # Rspress Dist
 dist/
 doc_build/
+docs/components/_meta.json
