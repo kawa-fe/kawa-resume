@@ -136,8 +136,6 @@ importers:
         specifier: ^3.39.0
         version: 3.40.0
 
-  packages/theme: {}
-
 packages:
 
   '@alloc/quick-lru@5.2.0':
