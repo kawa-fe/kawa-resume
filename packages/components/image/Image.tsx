@@ -7,9 +7,10 @@ const Image = React.memo(
       props;
 
     return (
+      // biome-ignore lint/a11y/useKeyWithClickEvents: key bindings are useless here
       <img
         ref={ref}
-        src={userData?.photoUri || src}
+        src={userData?.profile?.photo || src}
         alt={alt}
         width={width}
         height={height}

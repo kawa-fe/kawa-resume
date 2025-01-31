@@ -1,4 +1,4 @@
-import type { UserData } from '@kawafe/core';
+import type { ThemePreset, UserData } from '@kawafe/core';
 import type React from 'react';
 
 export interface ImageProps {
@@ -11,4 +11,5 @@ export interface ImageProps {
   className?: string;
 
   userData: UserData;
+  theme: ThemePreset;
 }

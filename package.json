@@ -10,6 +10,7 @@
     "docs:build": "rspress build",
     "lib:build": "pnpm --filter @kawafe/components build",
     "core:build": "pnpm --filter @kawafe/core build",
+    "layout:build": "pnpm --filter @kawafe/layout build",
     "prepare": "husky"
   },
   "devDependencies": {
