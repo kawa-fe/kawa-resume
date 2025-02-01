@@ -1,0 +1,26 @@
+# Info 组件
+
+## 基本用法
+
+```tsx preview
+import { Info } from '@kawafe/components';
+
+function App() {
+    const infoList = [
+        { title: "姓名", content: "张三" },
+        { title: "年龄", content: "25" },
+        { title: "学历", content: "硕士研究生" },
+        { title: "联系方式", content: "13800138000" },
+        { title: "邮箱", content: "zhangsan@example.com" },
+    ]
+    return (
+        <>
+            <h3 className="text-lg font-semibold mb-2">个人信息展示</h3>
+            <Info 
+                infoList={infoList}
+            />
+        </>
+    );
+}
+
+export default App;

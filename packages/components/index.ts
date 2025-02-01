@@ -2,6 +2,7 @@ export * from './image';
 export * from './list';
 export * from './resume_header';
 export * from './list/ListRenderItem/ListItem';
+export * from './info';
 // // @ts-expect-error Farm now has support for glob types
 // const globComponents = import.meta.glob("./*/index.ts", { eager: true });
 
