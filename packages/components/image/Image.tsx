@@ -3,8 +3,7 @@ import type { ImageProps } from './Image.types';
 
 const Image = React.memo(
   forwardRef<HTMLImageElement, ImageProps>((props: ImageProps, ref) => {
-    const { src, alt, width, height, style, onClick, className, userData } =
-      props;
+    const { src, alt, width, height, style, className, userData } = props;
 
     return (
       <img
@@ -14,7 +13,6 @@ const Image = React.memo(
         width={width}
         height={height}
         style={style}
-        onClick={onClick}
         className={className}
       />
     );

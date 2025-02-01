@@ -9,16 +9,14 @@ const List = memo(
         data,
         renderItem = (item: T) => <div>{String(item)}</div>,
       }: ListProps<T>,
-      ref: React.ForwardedRef<HTMLDivElement>,
+      ref: React.ForwardedRef<HTMLUListElement>,
     ) => {
       return (
-        <div ref={ref} role="list">
+        <ul ref={ref}>
           {data.map((item, index) => (
-            <div key={index} role="listitem">
-              {renderItem(item, index)}
-            </div>
+            <li key={crypto.randomUUID()}>{renderItem(item, index)}</li>
           ))}
-        </div>
+        </ul>
       );
     },
   ),
