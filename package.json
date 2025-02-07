@@ -16,10 +16,10 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
-    "@rspress/plugin-preview": "^1.40.2",
+    "@rspress/plugin-preview": "^1.41.1",
     "husky": "^9.1.7",
-    "lint-staged": "^15.2.10",
-    "rspress": "^1.40.2"
+    "lint-staged": "^15.4.3",
+    "rspress": "^1.41.1"
   },
   "lint-staged": {
     "*.{js,ts,vue,jsx,tsx}": ["biome check --write"]

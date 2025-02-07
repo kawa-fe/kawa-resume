@@ -4,6 +4,10 @@
   "description": "Core of Kawa Resume",
   "main": "dist/index.js",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kawa-fe/kawa-resume.git"
+  },
   "scripts": {
     "build": "farm build"
   },
@@ -16,11 +20,6 @@
     "@farmfe/js-plugin-dts": "^0.6.4",
     "@types/react": "^18.3.18",
     "core-js": "^3.40.0"
-  },
-  "dependencies": {
-    "@kawafe/layout": "link:../layout",
-    "react": "^18.3.1",
-    "theme": "link:../theme"
   },
   "exports": {
     ".": {

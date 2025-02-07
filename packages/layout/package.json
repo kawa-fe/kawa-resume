@@ -16,7 +16,7 @@
     "@kawafe/core": "link:../core",
     "@types/react": "^19.0.8",
     "@types/react-dom": "^19.0.3",
-    "core-js": "^3.39.0"
+    "core-js": "^3.40.0"
   },
   "dependencies": {
     "@kawafe/components": "link:../components",
