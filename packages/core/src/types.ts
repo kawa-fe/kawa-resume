@@ -155,10 +155,18 @@ export interface LayoutProps {
   userData: UserData;
   theme: ThemePreset;
 }
+export type LayoutComponent = React.FC<LayoutProps>;
+export interface LayoutPreset {
+  name: string;
+  version?: string;
+  license?: string;
+  author: string | string[];
+  layout: LayoutComponent;
+}
 
 export interface PresetConfig {
   theme?: ThemePreset;
-  layout?: React.FC<LayoutProps>;
+  layout?: LayoutPreset;
 }
 
 /**

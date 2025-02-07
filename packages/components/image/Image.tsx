@@ -8,7 +8,7 @@ const Image = React.memo(
     return (
       <img
         ref={ref}
-        src={userData?.photoUri || src}
+        src={userData?.profile?.photo || src}
         alt={alt}
         width={width}
         height={height}

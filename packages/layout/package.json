@@ -1,0 +1,26 @@
+{
+  "name": "@kawafe/layout",
+  "version": "0.1.0",
+  "description": "Collections of layout components for Kawa Resume",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "farm build"
+  },
+  "keywords": ["kawa", "resume", "layout", "component"],
+  "author": "苏向夜 <fu050409@163.com>",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@farmfe/cli": "^1.0.4",
+    "@farmfe/core": "^1.6.6",
+    "@farmfe/js-plugin-dts": "^0.6.4",
+    "@kawafe/core": "link:../core",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "core-js": "^3.40.0"
+  },
+  "dependencies": {
+    "@kawafe/components": "link:../components",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}
