@@ -10,10 +10,11 @@ export default defineConfig({
     },
     output: {
       entryFilename: 'index.js',
-      targetEnv: 'library-browser',
+      targetEnv: 'library',
       format: 'esm',
       path: 'dist',
     },
+    external: ['react', 'react-dom'],
     sourcemap: false,
     presetEnv: false,
     minify: false,
