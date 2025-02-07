@@ -6,12 +6,7 @@
   "scripts": {
     "build": "farm build"
   },
-  "keywords": [
-    "kawa",
-    "resume",
-    "layout",
-    "component"
-  ],
+  "keywords": ["kawa", "resume", "layout", "component"],
   "author": "苏向夜 <fu050409@163.com>",
   "license": "Apache-2.0",
   "devDependencies": {

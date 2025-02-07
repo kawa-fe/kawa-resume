@@ -6,7 +6,6 @@ const Image = React.memo(
     const { src, alt, width, height, style, className, userData } = props;
 
     return (
-      // biome-ignore lint/a11y/useKeyWithClickEvents: key bindings are useless here
       <img
         ref={ref}
         src={userData?.profile?.photo || src}
