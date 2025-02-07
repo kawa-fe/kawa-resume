@@ -165,7 +165,7 @@ export interface LayoutPreset {
 }
 
 export interface PresetConfig {
-  theme: ThemePreset;
+  theme?: ThemePreset;
   layout?: LayoutPreset;
 }
 
